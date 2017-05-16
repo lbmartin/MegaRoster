@@ -14,11 +14,11 @@ const handleSubmit = (ev) => {
      //const list = document.getElementByClassName('.details')
      const li = document.createElement('li')
      li.textContent = personName
-     details.appendChild(li)
+     details.insertBefore(li,details.childNodes[0])
+     
      const button = document.createElement("button");
      button.innerHTML = "delete";
      li.appendChild(button);
-     //list.insertBefore(li,list)
     
 }
 
